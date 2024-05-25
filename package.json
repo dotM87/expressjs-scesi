@@ -1,0 +1,28 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "first steps with expressjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/dotM87/expressjs-scesi.git"
+  },
+  "author": "dotM87",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dotM87/expressjs-scesi/issues"
+  },
+  "homepage": "https://github.com/dotM87/expressjs-scesi#readme",
+  "packageManager": "pnpm@9.1.1",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
