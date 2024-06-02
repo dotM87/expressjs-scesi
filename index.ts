@@ -2,6 +2,7 @@ import express, { Application, Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 
 import healthyRoute from '@/routes/healthyRoute';
+import productRoute from '@/routes/productRoute';
 
 dotenv.config();
 
@@ -12,6 +13,7 @@ const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use('/healthy', healthyRoute);
+app.use('/products', productRoute);
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
