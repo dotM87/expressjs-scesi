@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "first steps with expressjs",
   "main": "index.js",
+  "_moduleAliases": {
+    "@": "dist"
+  },
   "scripts": {
-    "build": "pnpm tsc",
+    "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "nodemon index.ts"
+    "dev": "nodemon --exec ts-node -r tsconfig-paths/register index.ts"
   },
   "repository": {
     "type": "github",
@@ -29,6 +32,7 @@
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.4.5"
   },
   "packageManager": "pnpm@9.1.1"
