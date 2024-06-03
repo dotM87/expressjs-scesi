@@ -1,3 +1,4 @@
+import 'module-alias/register';
 import express, { Application, Express, Request, Response } from 'express';
 import sequelize from '@/configs/database.config';
 import dotenv from 'dotenv';
